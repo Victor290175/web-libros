@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Newsreader", serif;
+}
+
+
+header {
+    /*border: 1px solid red;*/
+    padding: 0 40px 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+    border-bottom: 1px solid #F5F2F0;
+
+    /*Alinea todos los elementos al centro de forma vertical*/
+    nav {
+        /*border: 1px solid blue;*/
+        display: flex;
+        gap: 32px;
+        align-items: center;
+
+        ul {
+            /*background-color: red;*/
+            display: flex;
+            list-style: none;
+            /*quitar los puntitos*/
+            gap: 36px;
+
+            li {
+                a {
+                    text-decoration: none;
+                    color: #000;
+                }
+            }
+        }
+    }
+}
+
+.btn {
+    padding: 16px;
+    border-radius: 12px;
+    border: none;
+    font-weight: 600;
+
+    &.btn-primario {
+        /*SE USA & SOLO PARA LAS CLASES*/
+        background-color: #ED6E12;
+        color: #FFF;
+    }
+
+    &.btn-secundario {
+        background-color: #F5F2F0;
+    }
+}
+
+
+p {
+    margin-bottom: 10px;
+    line-height: 35px;
+}
+
+
+main {
+    /*border: 1px solid blue;*/
+    width: 960px;
+    margin: 0 auto;
+    padding-top: 40px;
+
+    .hero-section {
+        height: 512px;
+        background-image: url("../assets/hero_section.png");
+        background-size: cover;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        /*Actuen de arriba hacia abajo*/
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+
+        h2 {
+            font-size: 48px;
+            color: #FFF;
+        }
+
+        P {
+            text-align: center;
+            color: #FFF;
+        }
+    }
+
+    h3 {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .novedades {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+
+        article {
+            width: 223px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+
+    .mas_vendidos {
+        display: flex;
+        gap: 12px;
+        justify-content: flex-start;
+        margin-left: 12px;
+
+        article {
+            width: 223px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+
+    .ofertas_especiales {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        margin-left: 12px;
+
+        article {
+            width: 223px;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .suscribirse_revista {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+        margin-bottom: 20px;
+        font-size: 22px;
+
+        h2 {
+            margin-bottom: 40px;
+        }
+
+        p {
+            width: 800px;
+        }
+    }
+
+
+    .registra_correo {
+        display: flex;
+        justify-content: center;
+        /*width: 400px;
+        background: #d1cdcb;*/
+        padding: 10px;
+        /*border: 1px solid red;*/
+
+        .contenedor {
+            width: 550px;
+            margin: 1px solid blue;
+            background: #d9a480;
+            padding: 20px;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+
+
+            .caja_entrada {
+                width: 300px;
+                padding: 20px;
+                border: none;
+                border-radius: 10px;
+                color: #d9a480;
+            }
+
+            .btn_reg {
+                background-color: #ED6E12;
+                padding: 20px;
+                width: 100px;
+                color: #FFF;
+                border: none;
+            }
+        }
+    }
+
+    .acerca_nosotros {
+        margin-top: 40px;
+        width: 100%;
+        /*border: 1px solid red;*/
+
+        h2 {
+            margin-bottom: 40px;
+        }
+
+    }
+
+    footer {
+
+        .link_documentos {
+            ul {
+                display: flex;
+                list-style: none;
+                justify-content: space-between;
+                padding: 20px;
+
+                li {
+                    text-decoration: none;
+
+                    a {
+                        text-decoration: none;
+                        color: #ED6E12;
+                    }
+                }
+            }
+        }
+
+        .iconos_redes {
+            ul {
+                display: flex;
+                list-style: none;
+                justify-content: center;
+                gap: 15px;
+                padding: 20px;
+
+                li {
+                    text-decoration: none;
+
+                    a {
+                        text-decoration: none;
+                        color: #ED6E12;
+                    }
+                }
+            }
+        }
+
+        p {
+            text-align: center;
+            color: #ED6E12;
+        }
+
+    }
+
+}
